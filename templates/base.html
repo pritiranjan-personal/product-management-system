@@ -36,12 +36,12 @@
 <body>
 
     <body>
-        <div class="fixed-button">
+        <!-- <div class="fixed-button">
             <a href="https://codedthemes.com/item/gradient-able-admin-template" target="_blank"
                 class="btn btn-md btn-primary">
                 <i class="fa fa-shopping-cart" aria-hidden="true"></i> Upgrade To Pro
             </a>
-        </div>
+        </div> -->
         <!-- Pre-loader start -->
         <div class="theme-loader">
             <div class="loader-track">
@@ -70,8 +70,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <a href="index.html">
-                                <img class="img-fluid" src="assets/images/logo.png" alt="Theme-Logo" />
+                            <a href="{% url 'dashboard' %}">
+                                <img class="img-fluid" src="{% static 'images/logo.png' %}" alt="Theme-Logo" />
                             </a>
                             <a class="mobile-options">
                                 <i class="ti-more"></i>
@@ -174,7 +174,7 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="auth-normal-sign-in.html">
+                                            <a href="{% url 'logout' %}">
                                                 <i class="ti-layout-sidebar-left"></i> Logout
                                             </a>
                                         </li>
