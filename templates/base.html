@@ -184,8 +184,17 @@
                         </div>
                     </div>
                 </nav>
-                {% block content %}
-                {% endblock %}
+                <div class="pcoded-main-container">
+                    <div class="pcoded-wrapper">
+                        {% include 'includes/sidebar.html' %}
+                        <div class="pcoded-content">
+                            <div class="pcoded-inner-content">
+                                {% block content %}
+                                {% endblock %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
