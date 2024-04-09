@@ -30,7 +30,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-AUTH_USER_MODEL = 'base.User'
+AUTH_USER_MODEL = 'user_profile.User'
 
 
 # Application definition
@@ -43,8 +43,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'admin_panel',
-    'base',
-    'user_profile'
+    'user_profile',
+
 ]
 
 MIDDLEWARE = [
