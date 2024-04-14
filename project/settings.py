@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'admin_panel',
     'user_profile',
+    'products'
 
 ]
 
