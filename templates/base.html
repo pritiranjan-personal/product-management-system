@@ -31,6 +31,16 @@
     <!-- Style.css -->
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/jquery.mCustomScrollbar.css' %}">
+    <style>
+        .col-sm-2 {
+            padding-right: 4px;
+            padding-left: 4px;
+
+        }
+    </style>
+    {% block css %}
+
+    {% endblock %}
 </head>
 
 <body>
@@ -151,7 +161,7 @@
 
                                 <li class="user-profile header-notification">
                                     <a href="#!">
-                                        <img src="assets/images/avatar-4.jpg" class="img-radius"
+                                        <img src="{% static 'images/avatar-4.jpg' %}" class="img-radius"
                                             alt="User-Profile-Image">
                                         <span>John Doe</span>
                                         <i class="ti-angle-down"></i>
