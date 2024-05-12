@@ -7,3 +7,10 @@ from django.contrib.auth.decorators import login_required
 def dashboard(request):
     return render(request, 'admin_panel/index.html')
 
+
+
+
+@login_required(login_url='login')
+def product_list(request):
+    return render(request, 'product-list.html')
+
