@@ -38,3 +38,11 @@ def logout_view(request):
 
 def forgot_password(request):
     return render(request, 'user_profile/forgot-password.html')
+
+
+def employee_list(request):
+    return render(request, 'user_profile/employee-list.html')
+
+
+def add_employee(request):
+    return render(request, 'user_profile/add-employee.html')
