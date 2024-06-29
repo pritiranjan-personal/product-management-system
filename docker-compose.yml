@@ -1,0 +1,15 @@
+version: '3'
+services:
+  django:
+    image: product-management-system
+    container_name: django-project-app-c1
+    ports:
+      - "8000:8000"
+    networks:
+      - my-django-postgres-network
+    env_file:
+      - .env
+
+networks:
+  my-django-postgres-network:
+    external: true
